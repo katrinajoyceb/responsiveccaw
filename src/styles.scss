@@ -1,1 +1,158 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400&display=swap');
+
+$dark: #0D0D0D;
+$accent: #fff;
+$primary: #C86400;
+$secondary: #591902;
+
+$containerbackground: #c6538c;
+$maincontainerbackground: #FFF;
+
+// Small tablets and large smartphones (landscape view)
+$screen-xs-min: 375px;
+
+
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+@mixin fadeIn(){
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+@mixin fontcolor($color){
+    color: $color;
+}
+
+@mixin sections(){
+    background-color: rgba(#fff, 1);
+   
+    width: 1920px;
+    min-width: 1366px;
+    height: 768px;
+    margin: auto;
+    margin-bottom: 100px;   
+    position: relative; 
+}
+
+@mixin centerer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin box($width, $height, $top, $left){
+    background: rgb(191,59,0);
+    background: linear-gradient(45deg, rgba(191,59,0,1) 0%, rgba(255,128,0,1) 100%);
+    width: $width;
+    height: $height;
+    margin-top: $top;
+    margin-left: $left; 
+}
+
+@mixin textposition($top, $left){
+    position: absolute;
+    margin-top: $top;
+    margin-left: $left;
+    z-index: 100;
+}
+
+
+@mixin font-face($font-name, $alt-font, $font-weight, $font-size, $line-height){
+    font-family: $font-name, $alt-font;
+    font-weight: $font-weight; 
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+// Small devices
+@mixin xs {
+    @media (min-width: #{$screen-xs-min}) {
+        @content;
+    }
+ }
+
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+ }
+ 
+ // Extra large devices
+ @mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }
+
+
+ 
+
+body{
+    background-color:white;           
+}
+
+
+
+
+.section{
+    border: 1px solid red;
+    margin: 0 auto;
+  
+}
+
+.column{
+    border: 1px solid rgb(70, 70, 70);
+    margin: 10px;
+}
+
+
+
+h1{
+    @include font-face("Roboto Slab", "serif", 300, 120px, 100px);
+}
+
+h2{
+    @include font-face("Roboto Slab", "serif", 100, 50px, 60px);
+    
+}
+
+h3{
+    @include font-face("Roboto", "sans-serif", 400, 30px, 40px);
+}
+
+h4{
+    @include font-face("Roboto Slab", "serif", 400, 20px, 30px);
+}
+
+body{
+    @include font-face("Roboto", "serif", 400, 20px, 30px);   
+ 
+}
+
