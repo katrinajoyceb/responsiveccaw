@@ -8,61 +8,116 @@
     margin-top: 100px;
     margin-bottom: 100px;
 
-
-
-    .phones{
+    .wireframes{
         width: 100%;
         height: 450px;
 
+        .nfsbdiv{
+        
+            .device1{
+                // @include textposition(102px, 277px);
+                width: 590px;
+                height: 100%;
+                position: absolute;
+                z-index: 1;
+                background-image:url('src/images/portfolio/nfsbdetail.png');
+                background-size: 610px;
+                @include fadeIn();
+            }
+    
+            .device2 {
+                // @include textposition(210px, 503px);
+                width: 500px;
+                height: 100%;
+                position: absolute;
+                z-index: 1;
+                background-image:url('src/images/portfolio/nfsbonboarding.png');
+                background-size: 535px;
+                @include fadeIn();
+            }
+        }
+    
+        .llanodiv{
+            .device1{
+                // @include textposition(102px, 247px);
+                width: 570px;
+                height: 100%;
+               background-image:url('src/images/portfolio/llanodesktop.png');
+                position: absolute;
+                z-index: 1;
+                @include fadeIn();
+                background-size: 570px;
+            }
+    
+            .device2 {
+                // @include textposition(280px, 473px);
+                width: 450px;
+                height: 100%;
+                position: absolute;
+                z-index: 1;
+                background-image:url('src/images/portfolio/llanoipad.png');
+                background-size: 450px;
+                @include fadeIn();  
+            }
+        }
+    
+        .farmingdiv{
+            .device1{
+                // @include textposition(102px, 277px);
+                width: 570px;
+                height: 100%;  
+                position: absolute;
+                z-index: 1;
+                background-image:url('src/images/portfolio/map.png');
+                background-size: 570px;
+                @include fadeIn();
+            }
+    
+            .device2 {
+                // @include textposition(210px, 503px);
+                width: 500px;
+                height: 100%;
+                position: absolute;
+                z-index: 1;
+                background-image:url('src/images/portfolio/farms.png');
+                background-size: 500px;
+                @include fadeIn();
+            }
+        }
     }
 
     .portfolio{
         width: 100%;
-        
-
+    
         h1{
-                
-
             @include xs{
-                width: 100%;
                 height: 60px;
                 font-size: 35px;
                 letter-spacing: 10px;
-                color: #777777;
-               
+                color: #777777;               
             }
             
-        
             @include xl{  
-                width: 100%;
-                height: 120px;
-             
+                height: 120px; 
                 font-size: 120px;
                 letter-spacing: 35px;
                 color: black;
             }
-
-            
         }
     }
 
     .title{
-
-       
         width: 100%;
         font-size: 36px;
         text-align: center;
-        
     }
 
     .options{
         text-align: center;
-     
         width: 100%;
     }
 
     .text{
-    
         height: 250px;
         width: 100%;
 
@@ -70,18 +125,14 @@
            display: none;
         }
         
-    
         @include xl{  
            display: grid;
         }
-
     }
 
     .nav{
         text-align: center;
-       
         width: 100%
     }
-
 }
 
