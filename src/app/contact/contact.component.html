@@ -12,10 +12,7 @@
 
 
                     <form [formGroup]="contactForm" (ngSubmit)="messageUs(contactForm.value)">
-            
-                        
-                        
-                        
+        
 
                     <div class="row">
                         <div class="col-sm column">
@@ -33,7 +30,7 @@
                     
                     <div class="row">
                         <div class="col-sm column">
-                            <div class="contactmessage" (click)="closeMap()" [@contactForm]="isMapOpen ? 'small' : 'large'"><textarea id="message" required formControlName="message"  placeholder="I have a project that I would like to talk to y'all about."></textarea></div>
+                            <div class="contactmessage"><textarea id="message" required formControlName="message"  placeholder="I have a project that I would like to talk to y'all about."></textarea></div>
                         </div>
                     </div>
 
@@ -69,10 +66,12 @@
                 
                 
                     </h4>
+
+                    <div class="map" (click)="openMap()" [@openClose]="isMapOpen ? 'open' : 'close'">  </div>
             
                    
                 </div>
-                <div class="map" (click)="openMap()" [@openClose]="isMapOpen ? 'open' : 'close'">  </div>
+               
             </div>
         </div>
     </div>

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Validators, FormGroup, FormControl } from '@angular/forms';
-import { HttpService } from '../services/http.service';
+// import { HttpService } from '../services/http.service';
 
 
 import {
@@ -112,7 +112,7 @@ export class ContactComponent implements OnInit {
 
 
 
-  constructor(private http: HttpService) {}
+  constructor() {}
 
   ngOnInit() {
   }
