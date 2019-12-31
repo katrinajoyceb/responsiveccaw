@@ -10,35 +10,61 @@
                         </div>
                     </div>
 
+
+                    <form [formGroup]="contactForm" (ngSubmit)="messageUs(contactForm.value)">
+        
+
                     <div class="row">
                         <div class="col-sm column">
-                            EMAIL
+                            <input id="email" required formControlName="email" type="email" class="holder" placeholder="youremail@example.com"/><br />
                         </div>
                     </div>
                     
                     <div class="row">
                         <div class="col-sm column">
-                           NAME
+                             <input id="name" required formControlName="name" type="text" class="holder" placeholder="your name"/>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-sm column">
-                           <div class="contactform"><h2>ajsklfjskdfs</h2></div>
+                            <div class="contactmessage"><textarea id="message" required formControlName="message"  placeholder="I have a project that I would like to talk to y'all about."></textarea></div>
                         </div>
                     </div>
               
                     <div class="row">
                         <div class="col-sm column">
-                            <div class="submitbutton"><button>Submit</button></div>
+                            <div class="submitbutton"> <button class="stuff" type="submit" [disabled]="!contactForm.valid">SUBMIT</button></div>
                         </div>
                     </div>
+
+                    </form>
 
                 </div>
             </div>
 
             <div class="col-sm column info">
                 <div>info</div>
+
+
+                <div class="contactinfo" [@translateForm]="isMapOpen ? 'small' : 'large'" >
+                    <h4>
+                        
+                            <div class="phone"></div><p>(512) 842-7569</p>
+                            <div class="email"></div> <p>info@caprockapps.com</p>
+                            <div class="address"></div><p>5280 34th ST <br />
+                    Lubbock, TX 79407<br />
+                    Hours: Monday-Friday 8-5</p>
+                    <p>(Click map to expand)</p>
+                
+                
+                    </h4>
+
+                    <div class="map" (click)="openMap()" [@openClose]="isMapOpen ? 'open' : 'close'">  </div>
+            
+                   
+                </div>
+               
             </div>
             
         </div>
