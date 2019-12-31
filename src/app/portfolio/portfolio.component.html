@@ -1,45 +1,92 @@
 <div class="section">
+
+    <!-- Start Grid -->
     <div class="container">
+
+        <!-- Title Row -->
         <div class="row">
             <div class="col-md column">
                 <div class="portfolio"><h1>our work</h1></div>
             </div>
         </div>
-       <div class="row">
-        
-        <div class="col-md column">
-            <div class="phones">WIREFRAMES</div>
+        <!-- Title Row -->
+
+        <!-- Main Row -->
+        <div class="row">
+
+            <!-- Wireframes Column -->
+            <div class="col-md column">
+                <div class="wireframes">
+                    <div class="devices" [ngClass]="myClass">
+
+                        <div class="row">
+                            <div class="col-md"></div>
+                            <div class="col-md">
+                                <div class="device1" ></div>
+                            </div>
+
+                            <div class="col-md">
+                                <div class="device2"></div>
+                            </div>
+                            <div class="col-md"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Wireframes Column -->
+
+            <!-- Info Column -->
+            <div class="col-md">     
+
+                <div class="row">
+                    <div class="col-md">
+                        <div class="title">{{selectedWork.title}}</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md">
+                        <div class="options"><button (click)="details('about')" [@lastClicked]="about ? 'clicked' : 'notClicked'">ABOUT</button> <button (click)="details('problem')" [@lastClicked]="problem ? 'clicked' : 'notClicked'">PROBLEM</button> <button (click)="details('solution')" [@lastClicked]="solution ? 'clicked' : 'notClicked'"> SOLUTION</button></div>
+                    </div>  
+                </div>
+
+                <div class="row text">
+                    <div class="col-md">
+                        <div class="text">
+                            <div class="maintext">
+                                <div class="abouttext" *ngIf="about" wmAnimate="fadeIn" speed="normal">
+                                    {{selectedWork.about}}
+                                </div>
+
+                                <div class="problemtext"  *ngIf="problem" wmAnimate="fadeIn" speed="normal">
+                                    {{selectedWork.problem}}
+                                </div>
+                        
+                                <div class="solutiontext"  *ngIf="solution" wmAnimate="fadeIn" speed="normal">
+                                    {{selectedWork.solution}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md">
+                        <div class="nav"> 
+                            <div class="nfsb" [@lastClicked]="nfsbdiv ? 'clicked' : 'notClicked'"><button (click)="show('nfsb')">1</button></div>
+                            <div class="llano" [@lastClicked]="llanodiv ? 'clicked' : 'notClicked'"><button (click)="show('llano')">2</button></div>
+                            <div class="farming" [@lastClicked]="farmingdiv ? 'clicked' : 'notClicked'"><button (click)="show('farming')">3</button></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Info Column -->
+
         </div>
+        <!-- Main Row -->
 
-
-        <div class="col-md column">
-            
-            <div class="row">
-                <div class="col-md column">
-                    <div class="title">TITLE</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md column">
-                    <div class="options">ABOUT PROBLEM SOLUTION</div>
-                </div>
-                
-            </div>
-            <div class="row text">
-                <div class="col-md column">
-                    <div class="text">TEXT</div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md column">
-                    <div class="nav">_ _ _</div>
-                </div>
-            </div>
-        </div>
-        
-      
-
-       </div>
     </div>
+    <!-- End Grid -->
 </div>
