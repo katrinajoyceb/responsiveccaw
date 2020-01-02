@@ -1,11 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeroComponent } from './hero/hero.component';
 import { TypewriterComponent } from './typewriter/typewriter.component';
-import { TestComponent } from './test/test.component';
+
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AboutComponent } from './about/about.component';
 import { WireframesComponent } from './wireframes/wireframes.component';
@@ -22,7 +22,6 @@ import { AnimateComponent } from './animate/animate.component';
     AppComponent,
     HeroComponent,
     TypewriterComponent,
-    TestComponent,
     AboutComponent,
     WireframesComponent,
     PhoneComponent,
@@ -30,12 +29,14 @@ import { AnimateComponent } from './animate/animate.component';
     TestimonialsComponent,
     PackagesComponent,
     ContactComponent,
-    AnimateComponent
+    AnimateComponent,
+   
   ],
   imports: [
     BrowserModule,
     MDBBootstrapModule.forRoot(),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

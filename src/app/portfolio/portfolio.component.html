@@ -47,8 +47,11 @@
 
                 <div class="row">
                     <div class="col-md">
-                        <div class="options"><button (click)="details('about')" [@lastClicked]="about ? 'clicked' : 'notClicked'">ABOUT</button> <button (click)="details('problem')" [@lastClicked]="problem ? 'clicked' : 'notClicked'">PROBLEM</button> <button (click)="details('solution')" [@lastClicked]="solution ? 'clicked' : 'notClicked'"> SOLUTION</button></div>
-                    </div>  
+                        <div class="options">
+                            <button (click)="details('about')" [@lastClicked]="about ? 'clicked' : 'notClicked'">ABOUT</button> 
+                            <button (click)="details('problem')" [@lastClicked]="problem ? 'clicked' : 'notClicked'">PROBLEM</button> 
+                            <button (click)="details('solution')" [@lastClicked]="solution ? 'clicked' : 'notClicked'"> SOLUTION</button></div>
+                        </div>  
                 </div>
 
                 <div class="row text">

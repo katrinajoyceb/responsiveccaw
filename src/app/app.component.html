@@ -1,7 +1,119 @@
-<app-test></app-test>
-<app-about></app-about>
-<app-wireframes></app-wireframes>
-<app-portfolio></app-portfolio>
-<app-testimonials></app-testimonials>
-<app-packages></app-packages>
-<app-contact></app-contact>
+
+
+
+
+
+        <div *ngIf="!condition" class="fullmenu" wmAnimate="fadeInDown" speed="fast">
+            <div class="close" (click) = "condition = !condition"></div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <a (click) = "condition = !condition" href="#about">about</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm">
+                        <a (click) = "condition = !condition" href="#wireframes">wireframes</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm">
+                        <a (click) = "condition = !condition" href="#portfolio">portfolio</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm">
+                        <a (click) = "condition = !condition" href="#testimonials">testimonials</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm">
+                        <a (click) = "condition = !condition" href="#packages">packages</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm">
+                        <a (click) = "condition = !condition"href="#contact">contact</a>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+             
+               
+        
+        <div class="menut" *ngIf="!scrolling" wmAnimate="fadeIn" speed="fast">
+        
+              
+        
+        <div class="stuff" *ngIf="condition">
+            
+            <div class="logo" wmAnimate="fadeIn" speed="fast"></div>
+            
+            <div class="menu" (click) = "condition = !condition"></div>
+
+         </div>
+          
+    
+        
+        </div>
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="hero" id="hero"  wmAnimate="landing" speed="normal" aos>
+        <app-hero ></app-hero>
+    </div>
+
+
+    <div class="section" id="about" wmAnimate="fadeInUp" speed="normal" aos>
+        <app-about></app-about>
+    </div>
+
+
+    <div class="section" id="wireframes" wmAnimate="fadeInUp" speed="normal" aos>
+        <app-wireframes></app-wireframes>
+    </div>
+
+
+    <div class="section" id="portfolio" wmAnimate="fadeInUp" speed="normal" aos>
+        <app-portfolio></app-portfolio>
+    </div>
+
+    <div class="section" id="testimonials" wmAnimate="fadeInUp" speed="normal" aos>
+        <app-testimonials></app-testimonials>
+    </div>
+
+    <div class="section" id="packages" wmAnimate="fadeInUp" speed="normal" aos>
+        <app-packages></app-packages>
+    </div>
+    
+    <div class="section" id="contact" wmAnimate="fadeInUp" speed="normal" aos>
+        <app-contact></app-contact>
+    </div>
+
+  
+
+
+   
+    
+    
+    

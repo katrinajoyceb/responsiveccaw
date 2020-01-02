@@ -1,5 +1,102 @@
-.container{
-    .col{
-        border: 1px solid black;
+@import 'src/styles.scss';
+
+.section{
+    background-image:  url('src/images/heropage/blank.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    width: 100%;
+
+    @include xs{
+        height: 100%;
+    }
+
+    @include xl{
+        min-width: 1366px;
+        height: 768px;
+    }
+
+    .gradient{
+        position: absolute;
+        width: 100%;
+
+        @include xs{
+            height: 1000px;
+            background-image: linear-gradient(to bottom, rgba(255, 128, 0, 0.2), rgba(255, 128, 0, 0.44) 37%, rgba(255, 128, 0, 0.81) 66%, #FF8000);
+        }
+
+        @include xl{
+            height: 768px;
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.44) 37%, rgba(255, 255, 255, 0.81) 66%, rgb(255, 255, 255));
+        }
+    }
+
+    .logotext{
+        width: 200px;
+        height: 50px;
+        background-image:  url('src/images/heropage/fulllogo.png');
+        background-repeat: no-repeat;
+
+        @include xs{
+            background-size: 130px;
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+
+        @include xl{
+            background-size: 200px;
+            margin: 10px;
+            margin-top: 60px;
+        }
+    }
+    
+    .typewritercol{
+        height: 100vh;
+    }
+
+    .typewriter{
+        width: 325px;
+        height: 200px;
+        position: relative;
+
+        @include xs{
+            margin-top: 90%;
+        }
+
+        @include xl{
+            margin-top: 60%; 
+        }
+    }
+    
+    .phonecol{
+        @include xs{
+            background-color:  #FF8000;
+            height: 825px;
+        }
+
+        @include xl{
+            background-color: transparent;
+            height: 100%;
+        }   
+    }
+
+    .phone{
+        background-image:  url('src/images/heropage/iphone.png');
+        background-repeat: no-repeat;
+        background-position: -35px -45px;
+        z-index: 100000000;
+        position: relative;
+        background-color: transparent;
+        width: 420px;
+        height: 950px;
+
+        @include xs{
+            background-size: 500px;
+        }
+
+        @include xl{
+            background-size: 510px;
+            margin-top: -60px;
+        }
     }
 }

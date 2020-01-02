@@ -23,13 +23,14 @@ import {
   animations: [
     trigger('lastClicked', [
       state('clicked', style({
-        opacity: 1,
-        transform: 'scale(1.3)',
-        color: ' #FF8000'
+       
+        border:  'none',
+        color: ' #FFFFFF',
+        background: '#FF8000',
       })),
       state('notClicked', style({
-        opacity: 0.5,
-        background: '#FFFFFF',
+        
+        
       })),
       transition('clicked => notClicked', [
         animate('0.2s')

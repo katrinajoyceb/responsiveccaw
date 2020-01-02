@@ -1,11 +1,133 @@
-.test{
-    position: relative;
-    width: 100%;
-    height: 100vh;
+@import 'src/styles.scss';
+
+
+
+
+.fullmenu{
+    // width: 100%;
+    // height: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 10000000000000000;
+    text-align: center;
+   
+
+    @include xs{
+        width: 100vw;
+        height: 100vh;
+        padding-top: 10px;
+    }
+    @include xl{
+        width: 100%;
+        height: 100%;
+        padding-top: 100px;
+    }
+
+
+    a{
+       
+        text-decoration: none;
+        letter-spacing: 15px;
+        color: black;
+        cursor: pointer;
+        @include fadeIn();
+
+        @include xs{
+            @include font-face("Roboto Slab", "serif", 400, 25px, 70px);
+        }
+        @include xl{
+            @include font-face("Roboto Slab", "serif", 400, 50px, 100px);
+        }
+    }
+
+    a:hover{
+        color: $primary;
+        @include fadeIn();
+       
+    }
+
+    .close{
+         cursor: pointer;
+         background-image: url('src/images/body/close.png');
+         width: 25px;
+         height: 25px;
+        
+
+     }
+
+  
+
+   
+
 }
 
-.about{
-    position: relative;
-    width: 100%;
-    height: 100%;
+.menut{
+    // width: 100%;
+    height: 150px;
+    position: fixed;
+    z-index: 100000000;
+    margin: 0 auto; 
+    mix-blend-mode:  difference;
+
+    @include xs{
+        width: 100vw;
+       
+    }
+    @include xl{
+        width: 100%;
+       
+    }
+
+
+
+
+    .stuff{
+        width: 100%;
+    
+        .logo{
+           
+         
+            background-image:  url('src/images/heropage/logoc.png');
+            background-repeat: no-repeat;
+           
+           
+
+            @include xs{
+                @include textposition(10px,10px);
+                width: 60px;
+                height: 60px;
+                background-size: 50px;
+            }
+            @include xl{
+                @include textposition(44px,317px);
+                width: 90px;
+                height: 90px;
+                background-size: 80px;
+            }
+        }
+    
+        .menu{
+            background-image:  url('src/images/heropage/ic_menu_24px.png');
+            position: absolute;
+            cursor: pointer;
+
+            
+            @include xs{
+                @include textposition(20px,80%);
+                width: 50px;
+                height: 30px;
+            }
+            @include xl{
+                @include textposition(61px,1553px);
+                width: 50px;
+                height: 30px;
+            }
+        }    
+    }
+}
+
+.section{
+    // margin-top: 200px;
+    // padding-top: 80px;
+    border: 1px solid black;
 }
