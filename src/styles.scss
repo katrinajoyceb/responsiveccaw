@@ -3,7 +3,7 @@
 
 $dark: #0D0D0D;
 $accent: #fff;
-$primary: #C86400;
+$primary: #FF8000;
 $secondary: #591902;
 
 $containerbackground: #c6538c;
@@ -25,10 +25,10 @@ $screen-lg-min: 992px;
 $screen-xl-min: 1200px;
 
 @mixin fadeIn(){
-    -moz-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    -webkit-transition-duration: 1s;
-    transition-duration: 1s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
 @mixin fontcolor($color){

@@ -1,29 +1,168 @@
 @import 'src/styles.scss';
 
-.section{
-    width: 100%;
-    height: 100%;
-    min-height: 768px;
-    background-color: rgb(255, 255, 255);
+@mixin lightpackage(){
+    width: 370px;
+    height: 660px;
+    position: absolute;
+    border: 1px solid #CACED5;
+    line-height: 15px;
 
-    .package{
-        width: 300px;
-        height: 600px;
-        background-color: rgb(209, 168, 168);
+
+    .title{
+      
+        width: 150px;
+        height: 21px;
+        margin: auto;
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 50px;
+        text-align: center;
+        color: #FF5200;
     }
 
-    .package1{
-        width: 300px;
-        height: 600px;
-        background-color: rgb(175, 146, 146);
+    .description{
+        width: 264px;
+        height: 137px;
+       
+        margin: auto;
+        margin-top: 25px;
+        font-size: 13px;
+        text-align: center;
+        line-height: 20px;
+    }
 
-        @include xs{
-            display: none;
+    .cost{
+        width: 264px;
+        height: 85px;
+        
+        margin: auto;
+        font-size: 60px;
+        text-align: center;
+        color: #FF5200;
+      
+    }
+
+    .hours{
+        width: 60px;
+        height: 21px;
+        color: #FF5200;
+        font-size: 15px;
+       
+        margin: auto;
+        text-align: center;
+        margin-top: 21px;  
+        
+    }
+
+    .details{
+        width: 370px;
+        height: 184px;
+        background-color: #F5F6FA;
+        margin-top: 53px;
+        text-align: center; 
+        font-size: 15px;
+        font-weight: 700;
+
+        .one{
+            width: 100%;
+            height: 37px;
+            border-top: 1px solid #E8E9EC;
+            border-bottom: 1px solid #E8E9EC;
+            padding-top: 8px; 
         }
 
-        @include xl{
-            display: grid;
+        .two{
+            width: 100%;
+            height: 31px;
+            border-top: 1px solid #E8E9EC;
+            border-bottom: 1px solid #E8E9EC;
+            padding-top: 14px; 
         }
+
+        .three{
+            width: 100%;
+            height: 31px;
+            border-top: 1px solid #E8E9EC;
+            border-bottom: 1px solid #E8E9EC;
+            padding-top: 14px; 
+        }
+
+        .four{
+            width: 100%;
+            height: 31px;
+            border-top: 1px solid #E8E9EC;
+            border-bottom: 1px solid #E8E9EC;
+            padding-top: 14px; 
+        }
+
+    }
+
+    .call{
+        width: 370px;
+        height: 45px;
+        background-color: rgb(255, 137, 19);
+        text-align: center;
+        margin: auto;
+       
+       
+        color: white;
+
+        .contactbutton{
+            background-color: rgb(255, 137, 19);
+            border: none;
+            width: 370px;
+            height: 65px;
+            color: white;
+            font-size: 20px;
+
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+        .contactbutton:hover{
+            background-color: rgb(255, 183, 111);
+        }
+       
+    }
+
+}
+
+.section{
+    width: 100%;
+    
+    background-color: rgb(255, 255, 255);
+
+    @include xs{
+        height: 100vh;    
+     }
+     
+ 
+     @include xl{  
+         height: 768px;
+     }
+
+     .packagediv{
+
+       
+       
+        margin: 0 auto;
+
+        .package1{
+            @include lightpackage();
+        }
+    
+        .package2{
+            @include lightpackage();
+           
+        }
+    
+        .package3{
+            @include lightpackage();
+            
+        }
+
     }
     
 }

@@ -1,7 +1,106 @@
+@import 'src/styles.scss'; 
+
 .section{
     width: 100%;
-    height: 768px;
+    // height: 768px;    
+    position: relative;
     background-color:  #FF8000;
     color: white;
+    
+    @include xs{
+        height: 100vh;    
+     }
+    
+
+     @include xl{  
+         height: 768px;
+     }
+
+     #slider {
+        width: 100%;
+        height: 768px;  
+      
+     
+    }
+    
+    #left_panel {
+       
+        border: 1px solid rgb(55, 255, 0);  
+        position: absolute;
+        width: 100%;
+        
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right:0;
+        background-image:url('src/images/slider/low.png');
+        background-attachment: fixed;
+        // background-size: 100%;
+       
+        background-repeat: no-repeat;
+
+        @include xs{
+            height: 100vh;
+            background-size: 1800px;   
+            background-position: -710px 10px;
+         }
+        
+    
+         @include xl{  
+            height: 768px;
+            background-size: 100%;
+            background-position: 0px 90px;
+         }
+    }
+    
+    #right_panel {
+        
+        border: 1px solid rgb(153, 0, 255);  
+        position: absolute;
+        width: 100%;
+       
+        right: 0;
+        top:0;
+        bottom: 0;
+        width: 50%;
+        color: #fff;
+        background-image:url('src/images/slider/high.png');
+        background-attachment: fixed;
+        
+       
+        background-repeat: no-repeat;
+
+        @include xs{
+            height: 100vh;
+            background-size: 1800px;  
+            background-position: -710px 10px;  
+         }
+        
+    
+         @include xl{  
+            height: 768px;
+            background-size: 100%;
+            background-position: 0px 90px;
+         }
+        
+        
+    }
+    
+    #drag {
+        position: absolute;
+        left: -4px;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+       
+        background-color: white; 
+        background-image: url('src/images/body/handle.png');
+        background-position-y: 350px;
+        background-repeat: no-repeat;
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+        cursor: w-resize;
+    }
+
+
     
 }

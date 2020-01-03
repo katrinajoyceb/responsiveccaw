@@ -1,16 +1,22 @@
 
 
 
-
+<div class="responsivecontainer">
 
         <div *ngIf="!condition" class="fullmenu" wmAnimate="fadeInDown" speed="fast">
-            <div class="close" (click) = "condition = !condition"></div>
+          
 
 
             <div class="container">
                 <div class="row">
+                    
                     <div class="col-sm">
-                        <a (click) = "condition = !condition" href="#about">about</a>
+                        <div class="close" (click) = "condition = !condition"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <a class="button" (click) = "condition = !condition" href="#about">about</a>
                     </div>
                 </div>
 
@@ -79,17 +85,17 @@
 
 
 
-    <div class="hero" id="hero"  wmAnimate="landing" speed="normal" aos>
+    <div class="hero" id="hero"  wmAnimate="fadeInDown" speed="normal" aos>
         <app-hero ></app-hero>
     </div>
 
 
-    <div class="section" id="about" wmAnimate="fadeInUp" speed="normal" aos>
+    <div class="about" id="about" wmAnimate="fadeInUp" speed="normal" aos>
         <app-about></app-about>
     </div>
 
 
-    <div class="section" id="wireframes" wmAnimate="fadeInUp" speed="normal" aos>
+    <div class="section" id="wireframes" wmAnimate="fadeInUp" speed="normal" aos >
         <app-wireframes></app-wireframes>
     </div>
 
@@ -117,3 +123,4 @@
     
     
     
+</div>
