@@ -1,7 +1,52 @@
 <div class="section">
 
+    <div class="testimonials"><h1>testimonials</h1></div>
+    <ngb-carousel *ngIf="testimonials" data-interval="false" class="carousel">
+       
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <div class="stuff"><div class="text">{{first.review}}</div></div>
+          </div>
+          <div class="carousel-caption">
+            <h3>{{first.name}}</h3>
+            <p>{{first.company}}</p>
+          </div>
+        </ng-template>
+        
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <div class="stuff"><div class="text">{{second.review}}</div></div>
+            </div>
+            <div class="carousel-caption">
+              <h3>{{second.name}}</h3>
+              <p>{{second.company}}</p>
+            </div>
+          </ng-template>
+
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <div class="stuff"><div class="text">{{third.review}}</div></div>
+            </div>
+            <div class="carousel-caption">
+              <h3>{{third.name}}</h3>
+              <p>{{third.company}}</p>
+            </div>
+          </ng-template>
+
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <div class="stuff"><div class="text">{{fourth.review}}</div></div>
+            </div>
+            <div class="carousel-caption">
+              <h3>{{fourth.name}}</h3>
+              <p>{{fourth.company}}</p>
+            </div>
+          </ng-template>
+      </ngb-carousel>
+      
+
     <!-- Start Grid -->
-    <div class="container">
+    <!-- <div class="container">
         <div class="row">
             <div class="col-md">
                 <div class="testimonials"><h1>testimonials</h1></div>
@@ -13,37 +58,22 @@
             <div class="col-md">
 
                 <div class="row">
+                    
                     <div class="col-md">
-                        <div class="message">Message</div>
+                        <div class="message">{{first.review}}</div>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-sm">
-                        <div class="name"><h4>NAME and PHOTO</h4></div>
+                        <div class="name"><h4>{{first.name}} <br /> {{first.company}}</h4></div>
                     </div>
                 </div>
 
-            </div>
-
-            <div class="col-md column second">
-                
-                <div class="row">
-                    <div class="col-md">
-                        <div class="message">MESSAGE</div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-sm">
-                        <div class="name">NAME</div>
-                    </div>
-                </div>
-        
             </div>
             
         </div>
-    </div>
+    </div> -->
     <!-- End Grid -->
 
 </div>

@@ -19,36 +19,40 @@
         height: 450px;
        
         .nfsbdiv{
-            
+
+
             .device1{
-                width: 240px;
-                height: 450px;
+             
+                width: 245px;
+                height: 430px;
                 position: absolute;
                 z-index: 1;
                 background-image:url('src/images/portfolio/nfsbdetail.png');
-                background-size: auto 550px;
-                background-position: -145px -35px;
+                background-size: auto 430px;
+                background-position: -165px 0px;
                 text-align: center;
             }
     
             .device2 {   
-                width: 230px;
-                height: 420px;
+               
+                width: 210px;
+                height: 390px;
                 position: absolute;
                 z-index: 1;
                 background-image:url('src/images/portfolio/nfsbonboarding.png');
-                background-size: auto 500px;
-                background-position: -130px -30px;
-                // @include fadeIn();
+                background-size: auto 390px;
+                background-position: -155px 0px;
 
                  @include xs{
-                     @include textposition(50px, 135px);
+                     @include textposition(50px, 145px);
                  }
             
                  @include xl{
-                     @include textposition(50px, 0px);
+                     @include textposition(70px, 10px);
                  }
             }
+            
+        
         }
     
         .llanodiv{
@@ -113,7 +117,7 @@
                 background-position: -130px -30px;
 
                  @include xs{
-                     @include textposition(70px, 145px);
+                     @include textposition(60px, 145px);
                  }
             
                  @include xl{
@@ -125,8 +129,17 @@
 
     .portfolio{
         width: 100%;
+        
+        @include xs{
+            margin-top: 25px;
+        }
+   
+        @include xl{
+            margin-top: 0px;
+        }
     
         h1{
+            margin-bottom: 25px;
             @include xs{
                 height: 60px;
                 font-size: 35px;
@@ -147,6 +160,9 @@
         width: 100%;
         font-size: 36px;
         text-align: center;
+        font-style: italic;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .options{
@@ -192,6 +208,7 @@
         height: 250px;
         width: 100%;
 
+
         @include xs{
            display: none;
         }
@@ -202,27 +219,30 @@
     }
 
     .nav{
-        text-align: center;
+       justify-content: center;
         width: 100%;
+        margin-top: 20px;
 
         button{
           
-            background-color: white; 
-            border: 1px solid gray;
+            background-color:rgb(199, 199, 199); 
+            border: 1px solid rgb(199, 199, 199); 
             border-radius: 50px;
             @include fadeIn();
+            
            
 
             @include xs{
                 width: 50px;
-                height: auto;
+                height: 5px;
                 font-size: 10px;
-                margin: 2px;
+                margin-left: 20px;
+                margin-right: 20px;
             }
 
             @include xl{
                 width: 50px;
-                height: auto;
+                height: 5px;
                 font-size: 16px;
                 margin: 5px;
             }

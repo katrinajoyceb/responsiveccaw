@@ -5,7 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeroComponent } from './hero/hero.component';
 import { TypewriterComponent } from './typewriter/typewriter.component';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AboutComponent } from './about/about.component';
 import { WireframesComponent } from './wireframes/wireframes.component';
@@ -15,6 +15,8 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { PackagesComponent } from './packages/packages.component';
 import { ContactComponent } from './contact/contact.component';
 import { AnimateComponent } from './animate/animate.component';
+import { TestComponent } from './test/test.component';
+
 
 
 @NgModule({
@@ -30,13 +32,15 @@ import { AnimateComponent } from './animate/animate.component';
     PackagesComponent,
     ContactComponent,
     AnimateComponent,
+    TestComponent,
    
   ],
   imports: [
     BrowserModule,
     MDBBootstrapModule.forRoot(),
     BrowserAnimationsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,6 +7,72 @@
    
     color: white;
 
+
+    .stuff{
+        width: 100%;
+       
+        background-color: transparent;
+
+
+        @include xs{
+            height: 100vh;
+   
+         }
+         
+     
+         @include xl{  
+            height: 768px;
+
+         }
+        
+
+        .text{
+           
+            
+            padding-left: 25%;
+            padding-right: 25%;
+            justify-content: center;
+            position: absolute;
+            font-style: italic;
+           
+           
+            @include xs{
+                font-size: 1.2rem;
+                line-height: 36px;
+                padding-left: 40px;
+                padding-right: 40px;
+                margin-top: 50%;
+       
+             }
+             
+         
+             @include xl{  
+                width: 100%;
+                font-size: 30px;
+                line-height: 36px;
+                padding-left: 25%;
+                padding-right: 25%;
+                margin-top: 15%;
+    
+             }
+            
+        }
+    }
+
+    .carousel{
+        @include xs{
+            height: 100vh;    
+         }
+         
+     
+         @include xl{  
+             height: 100%;
+         }
+
+        
+        
+    }
+
     @include xs{
         height: 100vh;    
      }
@@ -16,10 +82,13 @@
          height: 768px;
      }
 
-    .testimonials{
+    
         h1{
+            
             text-align: center;
             width: 100%;
+            margin-top: 35px;
+            position: absolute;
 
             @include xs{
                 font-size: 35px;
@@ -37,7 +106,21 @@
 
     .message{
         height: 400px;
-        font-size: 25px;
+       
+       
+
+        @include xs{
+            font-size: 20px;
+            line-height: 30px;
+            margin: 0px 10px 20px;
+        }
+
+        @include xl{
+            font-size: 36px;
+            line-height: 52px;
+            margin: 40px;
+        }
+    
     }
 
     .name{
@@ -54,4 +137,3 @@
         }
     }
 
-}
