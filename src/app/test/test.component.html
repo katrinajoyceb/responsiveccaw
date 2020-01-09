@@ -5,68 +5,26 @@
        
         <ng-template ngbSlide>
           <div class="picsum-img-wrapper">
-            <div class="stuff"><div class="text">{{nfsb.title}}</div>
-                <!-- Main Row -->
-                <div class="row">
+            <div class="stuff"><div class="container">
+                
+                    <div class="row">
+                        <div class="col-sm"> </div>
 
-                    <!-- Wireframes Column -->
-                    <div class="col-md column">
-                        <div class="wireframes">
-                            <div class="nfsbdiv">
-        
-                                <div class="row">
-                                    <div class="col-md"></div>
-                                    <div class="col-md">
-                                        <div class="device1" ></div>
-                                    </div>
-        
-                                    <div class="col-md">
-                                        <div class="device2"></div>
-                                    </div>
-                                    <div class="col-md"></div>
-                                </div>
-        
-                            </div>
+                        <div class="col-sm">
+                            <div class="devices"></div>
                         </div>
-                    </div>
-                    <!-- Wireframes Column -->
-        
-                    <!-- Info Column -->
-                    <div class="col-md">    
-                        <div class="row">
-                            <div class="col-sm">
-                                <div class="title">{{nfsb.title}}</div>
-                            </div>
-                        </div> 
-    
-        
-                        <div class="row text">
-                            <div class="col-md">
-                                <div class="text">
-                                    <div class="maintext">
-                                        <div class="abouttext" *ngIf="about" wmAnimate="fadeIn" speed="normal">
-                                            {{selectedWork.about}}
-                                        </div>
-        
-                                        <div class="problemtext"  *ngIf="problem" wmAnimate="fadeIn" speed="normal">
-                                            {{selectedWork.problem}}
-                                        </div>
-                                
-                                        <div class="solutiontext"  *ngIf="solution" wmAnimate="fadeIn" speed="normal">
-                                            {{selectedWork.solution}}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
+
+                        <div class="col-sm">
+                            <div class="info"></div>
                         </div>
-        
-        
+
+                        <div class="col-sm"> </div>
                     </div>
-                    <!-- Info Column -->
+               
+               
         
-                </div>
-        
-        </div>
+            </div></div> 
           </div>
           <div class="carousel-caption">
             <div class="options">

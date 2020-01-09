@@ -1,4 +1,4 @@
-<div class="section">
+<div class="section" *ngIf="!team">
 
   <!-- Start Grid -->
   <div class="container"> 
@@ -6,6 +6,11 @@
     <!-- Main Row -->
     <div class="row">
       <div class="col">
+
+
+
+
+        <!---ABOUT DIV--->
 
         <div class="about" wmAnimate="fadeInUp" speed="normal" aos> 
          
@@ -31,6 +36,15 @@
 
         </div>
 
+        <!---END ABOUT DIV--->
+
+
+
+
+
+
+
+
       </div>
     </div>
     <!-- Main Row -->
@@ -38,4 +52,10 @@
   </div>
   <!-- End Grid -->
 
+</div>
+
+
+<div class="team" *ngIf="team" wmAnimate="fadeInUp" speed="normal">
+  <div class="aboutbutton"><button (click) = "goAbout()">ABOUT</button></div>
+<app-team></app-team>
 </div>

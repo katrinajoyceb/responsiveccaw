@@ -16,6 +16,7 @@ import { PackagesComponent } from './packages/packages.component';
 import { ContactComponent } from './contact/contact.component';
 import { AnimateComponent } from './animate/animate.component';
 import { TestComponent } from './test/test.component';
+import { TeamComponent } from './team/team.component';
 
 
 
@@ -33,6 +34,7 @@ import { TestComponent } from './test/test.component';
     ContactComponent,
     AnimateComponent,
     TestComponent,
+    TeamComponent,
    
   ],
   imports: [

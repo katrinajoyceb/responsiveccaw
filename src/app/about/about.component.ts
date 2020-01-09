@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AboutService } from '../services/about.service';
 
 @Component({
   selector: 'app-about',
@@ -8,19 +9,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  page: string; 
-  condition: boolean = true;
-  constructor() { }
+  team: boolean;
+  about: boolean;
 
-  ngOnInit() {}
+
+  constructor(private aboutService: AboutService) { 
+  }
+
+  ngOnInit() {
+
+  }
 
   goTeam(){
-    this.condition = !this.condition;
-    this.page = "team";
-  }
-
-  goBack(){
-    this.condition = !this.condition;
-  }
+    this.aboutService.goTeam();
+    this.team = this.aboutService.team;
+    this.about = this.aboutService.about;
+  }  
+  goAbout(){
+    this.aboutService.goAbout();
+    this.team = this.aboutService.team;
+    this.about = this.aboutService.about;
+  } 
   
 }

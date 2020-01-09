@@ -1,0 +1,56 @@
+<div class="section" *ngIf="!details" wmAnimate="fadeInUp" speed="normal">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2 cols" >
+                
+                <!-- <div class="nat" (click) = "goDetails('nat')"></div> -->
+            </div>
+            <div class="col-sm-2 nat" (click) = "goDetails('nat')">
+                
+                <!-- <div class="nat" (click) = "goDetails('nat')"></div> -->
+            </div>
+            <div class="col-sm-2 ethan" (click) = "goDetails('ethan')">
+               
+                <!-- <div class="ethan" (click) = "goDetails('ethan')"></div> -->
+            </div>
+            <div class="col-sm-2 riley" (click) = "goDetails('riley')">
+                <!-- <div class="persondiv" (click) = "goDetails('riley')"></div> -->
+            </div>
+            <div class="col-sm-2 kat" (click) = "goDetails('kat')">
+                <!-- <div class="persondiv" (click) = "goDetails('kat')"></div> -->
+            </div>
+            <div class="col-sm-2 alex" (click) = "goDetails('alex')">
+                <!-- <div class="persondiv" (click) = "goDetails('alex')"></div> -->
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<div class="details" *ngIf="details" wmAnimate="fadeIn" speed="normal">
+    <div class="teambutton"><button (click) = "goTeam()">TEAM</button></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div [@openClose]="isOpen ? 'open' : 'close'" [ngClass]="myClass" ></div>
+            </div>
+            <div class="col-sm">
+                <div class="row">
+                    <div class="col-sm">
+                        {{name}}
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm">
+                        Information
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
