@@ -130,11 +130,11 @@
 .section{
     width: 100%;
     background-color:rgb(255, 255, 255);
-    border: 1px solid black;
+    
 
     @include xs{
         
-        height: 100vh;
+        height: auto;
     }
 
     @include xl{
@@ -173,7 +173,7 @@
 .details{
 
     width: 100%;
-    background-color:rgb(109, 99, 99);
+   
 
     @include xs{
         padding: 0px;
@@ -185,11 +185,13 @@
         height: 768px;   
     }
 
-    .person{
-        width: 500px;
-        height: 768px;
-        background-color: pink;
-    }
+   .natdet{
+       width: 400px;
+       height: 768px;
+       
+       background-image:url('src/images/about/nat-min.png');
+    background-size: 400px;
+   }
 
     .teambutton{
         position: absolute;

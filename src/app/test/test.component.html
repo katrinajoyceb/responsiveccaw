@@ -1,56 +1,53 @@
 <div class="section">
 
-    <div class="portfolio"><h1>our work</h1></div>
-    <ngb-carousel *ngIf="works" data-interval="false" class="carousel">
-       
-        <ng-template ngbSlide>
-          <div class="picsum-img-wrapper">
-            <div class="stuff"><div class="container">
-                
-                    <div class="row">
-                        <div class="col-sm"> </div>
+  <div class="portfolio"><h1>our work</h1></div>
+  <ngb-carousel *ngIf="selectedWork" data-interval="false" class="carousel">
+     
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          
+          
 
-                        <div class="col-sm">
-                            <div class="devices"></div>
-                        </div>
+           
+              <div class="row">
+                <div class="col-sm">
 
+                  sadfsd
+                </div>
+                <div class="col-sm-2">
+                asdfsd
+                </div>
+                <div class="col-sm-5">
+                  {{nfsbdiv}}
+                </div>
+                <div class="col-sm">
 
-                        <div class="col-sm">
-                            <div class="info"></div>
-                        </div>
+                  sdafsd
+                </div>
+                </div>
+          
+         
+            
+            
+           
+            
+           
+        </div>
+        <div class="carousel-caption">
+         
+          <h3>LOL</h3>
+          <p>HH</p>
 
-                        <div class="col-sm"> </div>
-                    </div>
-               
-               
-        
-            </div></div> 
-          </div>
-          <div class="carousel-caption">
-            <div class="options">
-                <button (click)="details('about')" [@lastClicked]="about ? 'clicked' : 'notClicked'">ABOUT</button> 
-                <button (click)="details('problem')" [@lastClicked]="problem ? 'clicked' : 'notClicked'">PROBLEM</button> 
-                <button (click)="details('solution')" [@lastClicked]="solution ? 'clicked' : 'notClicked'"> SOLUTION</button></div>
-          </div>
-        </ng-template>
-        
-        <ng-template ngbSlide>
-            <div class="picsum-img-wrapper">
-              <div class="stuff"><div class="text">{{llano.title}}</div></div>
-            </div>
-            <div class="carousel-caption">
-              <h3>Mordffe Stuff</h3>
-              <p>Yesss</p>
-            </div>
-          </ng-template>
+        </div>
+      </ng-template>
+      
+ 
 
-          <ng-template ngbSlide>
-            <div class="picsum-img-wrapper">
-              <div class="stuff"><div class="text">{{farming.title}}</div></div>
-            </div>
-            <div class="carousel-caption">
-              <h3>Morsdfsde Stuff</h3>
-              <p>Yesdf</p>
-            </div>
-          </ng-template>
-      </ngb-carousel>
+      
+
+    </ngb-carousel>
+    
+
+ 
+
+</div>

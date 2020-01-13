@@ -22,7 +22,7 @@ export class TestimonialsComponent implements OnInit {
       photo: "Photo" 
     },
     {
-      review: "We hired Caprock Custom Applications to develop a software application for both the iPhone and Android platforms. [...] We felt our idea was a little complex and rough around the edges. They programmed and designed something that was better than we imagined. We value quick response times, great work and a great relationship. This is exactly what we paid for and more than we expected.",
+      review: "We hired Caprock Custom Applications to develop a software application [...] We felt our idea was a little complex and rough around the edges. They programmed and designed something that was better than we imagined. We value quick response times, great work and a great relationship. This is exactly what we paid for and more than we expected.",
       name: "Tia Clary",
       company: "StockShow Box",
       photo: "Photo" 

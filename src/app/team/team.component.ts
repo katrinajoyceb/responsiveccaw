@@ -104,7 +104,7 @@ export class TeamComponent implements OnInit {
     this.team = this.aboutService.team;
     this.about = this.aboutService.about;
     this.details = this.aboutService.details;
-    this.myClass = name;
+    this.myClass = name + 'det';
     this.isOpen = !this.isOpen;
     console.log(name);
   }

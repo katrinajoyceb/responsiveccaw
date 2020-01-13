@@ -11,16 +11,17 @@
     width: 100%;
     height: auto;
 
+    
+    
     .aboutbutton{
-        position: absolute;
+        position: relative;
         text-align: center; 
        
         z-index: 100;
 
         @include xs{
         
-            margin-left: 0px;
-            margin-top: 70%;
+           margin: 15% auto;
         }
     
         @include xl{
@@ -58,7 +59,7 @@
 .section{
     background-color: white;
     position: relative;
-    border: 1px solid red;
+  
     
     color: black;
    
