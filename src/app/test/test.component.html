@@ -1,53 +1,168 @@
 <div class="section">
-
-  <div class="portfolio"><h1>our work</h1></div>
-  <ngb-carousel *ngIf="selectedWork" data-interval="false" class="carousel">
-     
+  <h1>our work</h1>
+  <ngb-carousel *ngIf="works" data-interval="false" class="carousel">
+    
       <ng-template ngbSlide>
         <div class="picsum-img-wrapper">
+          <div class="stuff">
+
+
           
-          
+            <div class="row">
+              
+              <div class="col-sm"></div>
 
-           
-              <div class="row">
-                <div class="col-sm">
-
-                  sadfsd
+              <div class="col-sm column">
+                <div class="wireframes">
+                  <div class="nfsbdiv" >  
+                    <div class="row">
+                      <div class="col-md"></div>
+                      <div class="col-md">
+                        <div class="device1" ></div>
+                      </div>
+                      <div class="col-md">
+                        <div class="device2"></div>
+                      </div>
+                      <div class="col-md"></div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-sm-2">
-                asdfsd
-                </div>
-                <div class="col-sm-5">
-                  {{nfsbdiv}}
-                </div>
-                <div class="col-sm">
+              </div>
 
-                  sdafsd
+              <div class="col-sm-5">
+                <div class="row">
+                  <div class="col-sm">
+                    <h2>Not For Sale But...</h2>
+                  </div>
                 </div>
+                <div class="row">
+                  <div class="col-sm">
+                    <div class="options">
+                      <button (click)="details('about')" [@lastClicked]="about ? 'clicked' : 'notClicked'">ABOUT</button> 
+                      <button (click)="details('problem')" [@lastClicked]="problem ? 'clicked' : 'notClicked'">PROBLEM</button> 
+                      <button (click)="details('solution')" [@lastClicked]="solution ? 'clicked' : 'notClicked'"> SOLUTION</button>
+                    </div>  
+                  </div>
                 </div>
-          
-         
-            
-            
-           
-            
-           
-        </div>
-        <div class="carousel-caption">
-         
-          <h3>LOL</h3>
-          <p>HH</p>
 
-        </div>
-      </ng-template>
-      
- 
-
-      
-
-    </ngb-carousel>
+                <div class="row">
+                  <div class="col-sm">
+                    <div class="text">
+                      <div class="abouttext" *ngIf="about" wmAnimate="fadeIn" speed="normal">
+                        {{nfsb.about}}
+                      </div>
     
+                      <div class="problemtext"  *ngIf="problem" wmAnimate="fadeIn" speed="normal">
+                        {{nfsb.problem}}
+                      </div>
+              
+                      <div class="solutiontext"  *ngIf="solution" wmAnimate="fadeIn" speed="normal">
+                        {{nfsb.solution}}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm"></div>
+            </div>
+          </div>  
+        </div>
 
- 
+        <!-- <div class="carousel-caption caption">
+          <h2>Not For Sale But...</h2>
+          <div class="options">
+            <button (click)="details('about')" [@lastClicked]="about ? 'clicked' : 'notClicked'">ABOUT</button> 
+            <button (click)="details('problem')" [@lastClicked]="problem ? 'clicked' : 'notClicked'">PROBLEM</button> 
+            <button (click)="details('solution')" [@lastClicked]="solution ? 'clicked' : 'notClicked'"> SOLUTION</button>
+          </div>  
+        </div> -->
+      </ng-template>
 
+
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <div class="stuff">
+
+          
+          
+            <div class="row">
+              
+              <div class="col-sm"></div>
+
+              <div class="col-sm column">
+                <div class="wireframes">
+                  <div class="llanodiv" >  
+                    <div class="row">
+                      <div class="col-md"></div>
+                      <div class="col-md">
+                        <div class="device1" ></div>
+                      </div>
+                      <div class="col-md">
+                        <div class="device2"></div>
+                      </div>
+                      <div class="col-md"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-5">
+
+                <div class="row">
+                  <div class="col-sm">
+                    <h2>Llano Waste</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm">
+                    <div class="options">
+                      <button (click)="details('about')" [@lastClicked]="about ? 'clicked' : 'notClicked'">ABOUT</button> 
+                      <button (click)="details('problem')" [@lastClicked]="problem ? 'clicked' : 'notClicked'">PROBLEM</button> 
+                      <button (click)="details('solution')" [@lastClicked]="solution ? 'clicked' : 'notClicked'"> SOLUTION</button>
+                    </div>  
+                  </div>
+                </div>
+              
+
+                <div class="row">
+                  <div class="col-sm">
+                    <div class="text">
+                      <div class="abouttext" *ngIf="about" wmAnimate="fadeIn" speed="normal">
+                        {{llano.about}}
+                      </div>
+    
+                      <div class="problemtext"  *ngIf="problem" wmAnimate="fadeIn" speed="normal">
+                        {{llano.problem}}
+                      </div>
+              
+                      <div class="solutiontext"  *ngIf="solution" wmAnimate="fadeIn" speed="normal">
+                        {{llano.solution}}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+             
+
+              </div>
+              <div class="col-sm"></div>
+            </div>
+          </div>  
+        </div>
+
+        <!-- <div class="carousel-caption caption">
+          <h2>Llano Waste</h2>
+          <div class="options">
+            <button (click)="details('about')" [@lastClicked]="about ? 'clicked' : 'notClicked'">ABOUT</button> 
+            <button (click)="details('problem')" [@lastClicked]="problem ? 'clicked' : 'notClicked'">PROBLEM</button> 
+            <button (click)="details('solution')" [@lastClicked]="solution ? 'clicked' : 'notClicked'"> SOLUTION</button>
+          </div>  
+        </div> -->
+      </ng-template>
+
+
+
+  </ngb-carousel>
 </div>

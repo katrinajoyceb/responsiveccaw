@@ -161,6 +161,25 @@ ngb-carousel {
 
 
 
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+.carousel-indicators li {
+    display: inline-block;
+   background-color: rgb(206, 206, 206);
+    cursor: pointer;
+    
+}
+.carousel-indicators .active {
+    
+    background-color: gray;
+}
+
+
+
+
 
 
 h1{
