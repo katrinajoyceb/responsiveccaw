@@ -44,10 +44,10 @@
             </div>
 
             <div class="col-sm column info" wmAnimate="fadeInUp" speed="normal" aos>
-                <div>info</div>
+                <div>contact info</div>
 
 
-                <div class="contactinfo" [@translateForm]="isMapOpen ? 'small' : 'large'" >
+                <div class="contactinfo">
                     <h4>
                         
                             <div class="phone"></div><p>(512) 842-7569</p>
@@ -55,12 +55,12 @@
                             <div class="address"></div><p>5280 34th ST <br />
                     Lubbock, TX 79407<br />
                     Hours: Monday-Friday 8-5</p>
-                    <p>(Click map to expand)</p>
+                   
                 
                 
                     </h4>
 
-                    <div class="map" (click)="openMap()" [@openClose]="isMapOpen ? 'open' : 'close'">  </div>
+                    <div class="map"><app-maps></app-maps></div>
             
                    
                 </div>

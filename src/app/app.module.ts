@@ -17,6 +17,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AnimateComponent } from './animate/animate.component';
 import { TestComponent } from './test/test.component';
 import { TeamComponent } from './team/team.component';
+import { MapsComponent } from './maps/maps.component';
 
 
 
@@ -35,6 +36,7 @@ import { TeamComponent } from './team/team.component';
     AnimateComponent,
     TestComponent,
     TeamComponent,
+    MapsComponent,
    
   ],
   imports: [

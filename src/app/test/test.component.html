@@ -68,14 +68,6 @@
           </div>  
         </div>
 
-        <!-- <div class="carousel-caption caption">
-          <h2>Not For Sale But...</h2>
-          <div class="options">
-            <button (click)="details('about')" [@lastClicked]="about ? 'clicked' : 'notClicked'">ABOUT</button> 
-            <button (click)="details('problem')" [@lastClicked]="problem ? 'clicked' : 'notClicked'">PROBLEM</button> 
-            <button (click)="details('solution')" [@lastClicked]="solution ? 'clicked' : 'notClicked'"> SOLUTION</button>
-          </div>  
-        </div> -->
       </ng-template>
 
 
@@ -152,14 +144,81 @@
           </div>  
         </div>
 
-        <!-- <div class="carousel-caption caption">
-          <h2>Llano Waste</h2>
-          <div class="options">
-            <button (click)="details('about')" [@lastClicked]="about ? 'clicked' : 'notClicked'">ABOUT</button> 
-            <button (click)="details('problem')" [@lastClicked]="problem ? 'clicked' : 'notClicked'">PROBLEM</button> 
-            <button (click)="details('solution')" [@lastClicked]="solution ? 'clicked' : 'notClicked'"> SOLUTION</button>
+      </ng-template>
+
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <div class="stuff">
+
+          
+          
+            <div class="row">
+              
+              <div class="col-sm"></div>
+
+              <div class="col-sm column">
+                <div class="wireframes" >
+                  <div class="farmingdiv">  
+                    <div class="row">
+                      <div class="col-md"></div>
+                      <div class="col-md">
+                        <div class="device1" ></div>
+                      </div>
+                      <div class="col-md">
+                        <div class="device2"></div>
+                      </div>
+                      <div class="col-md"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-5">
+
+                <div class="row">
+                  <div class="col-lg">
+                    <h2>Farming App</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg">
+                    <div class="options">
+                      <button (click)="details('about')" [@lastClicked]="about ? 'clicked' : 'notClicked'">ABOUT</button> 
+                      <button (click)="details('problem')" [@lastClicked]="problem ? 'clicked' : 'notClicked'">PROBLEM</button> 
+                      <button (click)="details('solution')" [@lastClicked]="solution ? 'clicked' : 'notClicked'"> SOLUTION</button>
+                    </div>  
+                  </div>
+                </div>
+              
+
+                <div class="row">
+                  <div class="col-lg">
+                    <div class="text">
+                      <div class="abouttext" *ngIf="about" wmAnimate="fadeIn" speed="normal">
+                        {{farming.about}}
+                      </div>
+    
+                      <div class="problemtext"  *ngIf="problem" wmAnimate="fadeIn" speed="normal">
+                        {{farming.problem}}
+                      </div>
+              
+                      <div class="solutiontext"  *ngIf="solution" wmAnimate="fadeIn" speed="normal">
+                        {{farming.solution}}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+             
+
+              </div>
+              <div class="col-sm"></div>
+            </div>
           </div>  
-        </div> -->
+        </div>
+
       </ng-template>
 
 

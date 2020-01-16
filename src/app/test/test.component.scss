@@ -50,7 +50,7 @@
                 margin-left: 0;
                 position: relative;
                 z-index: -1;
-                margin-top: 0%;
+                margin-top: -5%;
             }
 
        
@@ -64,17 +64,15 @@
                
                 width: 100%;
                 height: 500px;
-    
-    
+
                 .device1{
-                 
                     width: 245px;
-                    height: 430px;
+                    height: 450px;
                     position: absolute;
                     z-index: 1;
                     background-image:url('src/images/portfolio/nfsbdetail.png');
-                    background-size: auto 430px;
-                    background-position: -165px 0px;
+                    background-size: auto 450px;
+                    background-position: -170px 0px;
                     text-align: center;
                 }
         
@@ -89,7 +87,7 @@
                     background-position: -155px 0px;
     
                      @include xs{
-                         @include textposition(50px, 150px);
+                         @include textposition(70px, 150px);
                      }
                 
                      @include xl{
@@ -102,6 +100,8 @@
 
                 
         .llanodiv{
+
+            
             .device1{
                 
                 width: 500px;
@@ -142,6 +142,39 @@
                  }
             }
         }
+
+
+          
+        .farmingdiv{
+            .device1{
+               width: 245px;
+               height: 450px;
+               position: absolute;
+               z-index: 1;
+               background-image:url('src/images/portfolio/map.png');
+               background-size: auto 520px;
+               background-position: -145px -35px;
+               text-align: center;
+           }
+   
+           .device2 {   
+               width: 210px;
+               height: 410px;
+               position: absolute;
+               z-index: 1;
+               background-image:url('src/images/portfolio/farms.png');
+               background-size: auto 450px;
+               background-position: -130px -30px;
+
+                @include xs{
+                    @include textposition(60px, 145px);
+                }
+           
+                @include xl{
+                    @include textposition(70px, 10px);
+                }
+           }
+       }
     
         }
 
@@ -150,33 +183,35 @@
 
         .text{
 
+            z-index: 100000;
+
             @include xs{
                position: absolute;
                width: 100vw;
-               background-color:  #FF8000;
+               background-color:  rgb(255, 128, 0);
                color: white;
                font-size: 14px;
                margin-left: 0;
-               margin-top: 10%;
+               margin-top: -136%;
                border-radius: 0px;
-               height: 500px;
+               height: 450px;
                border: none;
-                padding: 40%;
-                display: none;
+                padding: 10%;
+               
 
                
                
             }
             
             @include xl{  
-               display: grid;
+              
                position: relative;
                background-color: white;
                color: black;
                font-size: 25px;
                margin-left: 50px;
                width: 90%;
-               margin-top: 0%;
+               margin-top: 2%;
                border-radius: 20px;
                height: auto;
                border: 1px solid #e4e4e4;
@@ -188,13 +223,18 @@
 
     .options{
         text-align: center;
+        
         @include xs{
            width: 100vw;    
+           margin-top: 0;
+          
          }
          
      
          @include xl{  
              width: 100%;
+             margin-top: 2%;
+            
          }
        
 
@@ -290,12 +330,14 @@
             @include xs{
                 font-size: 35px;
                 margin-top: 0%;
+              
                
             }
             
             @include xl{  
                 font-size: 70px;
-                margin-top: 5%;
+                margin-top: 10%;
+                
             }
         }
     }

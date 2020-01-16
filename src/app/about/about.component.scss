@@ -8,26 +8,37 @@
 }
 
 .team{
-    width: 100%;
-    height: auto;
+    width: auto;
+    
+    @include xs{
+        padding-top: 50px;
+        height: 100vh;
+    }
+
+    @include xl{
+        padding: 0px;
+        height: 768px;   
+    }
 
     
     
+    
     .aboutbutton{
-        position: relative;
+        position: absolute;
+    
         text-align: center; 
        
         z-index: 100;
 
         @include xs{
         
-           margin: 15% auto;
+           margin-left: 20%;
         }
     
         @include xl{
             
-            margin-left: 376px;
-            margin-top: 18%;
+            margin-left: 0;
+            margin-top: 0%;
         }
 
 
