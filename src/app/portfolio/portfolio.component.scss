@@ -29,28 +29,28 @@
                 z-index: 1;
                 background-image:url('src/images/portfolio/nfsbdetail.png');
                 background-size: auto 430px;
-                background-position: -165px 0px;
+                background-position: 0px 0px;
                 text-align: center;
             }
     
-            .device2 {   
+            // .device2 {   
                
-                width: 210px;
-                height: 390px;
-                position: absolute;
-                z-index: 1;
-                background-image:url('src/images/portfolio/nfsbonboarding.png');
-                background-size: auto 390px;
-                background-position: -155px 0px;
+            //     width: 210px;
+            //     height: 390px;
+            //     position: absolute;
+            //     z-index: 1;
+            //     background-image:url('src/images/portfolio/nfsbonboarding.png');
+            //     background-size: auto 390px;
+            //     background-position: -155px 0px;
 
-                 @include xs{
-                     @include textposition(50px, 145px);
-                 }
+            //      @include xs{
+            //          @include textposition(50px, 145px);
+            //      }
             
-                 @include xl{
-                     @include textposition(70px, 10px);
-                 }
-            }
+            //      @include xl{
+            //          @include textposition(70px, 10px);
+            //      }
+            // }
             
         
         }

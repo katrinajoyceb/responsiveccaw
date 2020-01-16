@@ -137,7 +137,7 @@
     
                
                
-    
+    //make into columns to be responsive
                 @include xs{
                     @include textposition(10px,10px);
                     width: 60px;

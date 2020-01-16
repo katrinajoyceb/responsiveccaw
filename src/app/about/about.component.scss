@@ -9,6 +9,7 @@
 
 .team{
     width: auto;
+   
     
     @include xs{
         padding-top: 50px;
@@ -24,7 +25,7 @@
     
     
     .aboutbutton{
-        position: absolute;
+        position: relative;
     
         text-align: center; 
        

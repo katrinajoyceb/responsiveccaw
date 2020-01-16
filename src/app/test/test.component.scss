@@ -1,6 +1,10 @@
 @import 'src/styles.scss'; 
 
 
+
+.cols{
+    border: 1px solid black;
+}
 .section{
     width: 100%;
     
@@ -44,6 +48,7 @@
          .wireframes{
             width: 100%;
             height: 450px;
+    
             
 
             @include xs{
@@ -64,35 +69,41 @@
                
                 width: 100%;
                 height: 500px;
+                position: relative;
 
                 .device1{
                     width: 245px;
                     height: 450px;
                     position: absolute;
+                    
                     z-index: 1;
                     background-image:url('src/images/portfolio/nfsbdetail.png');
                     background-size: auto 450px;
-                    background-position: -170px 0px;
+                    background-position: -0px 0px;
                     text-align: center;
+
+                    
                 }
         
                 .device2 {   
                    
-                    width: 210px;
+                    width: 220px;
                     height: 390px;
                     position: absolute;
                     z-index: 1;
                     background-image:url('src/images/portfolio/nfsbonboarding.png');
                     background-size: auto 390px;
-                    background-position: -155px 0px;
+                    background-position: -0px 0px;
     
-                     @include xs{
-                         @include textposition(70px, 150px);
-                     }
+                      @include xs{
+                          @include textposition(70px, 150px);
+                         
+                      }
                 
-                     @include xl{
-                         @include textposition(70px, 10px);
-                     }
+                      @include xl{
+                          @include textposition(70px, 100px);
+                          
+                      }
                 }
                 
             
@@ -110,8 +121,8 @@
                 position: absolute;
                 z-index: 1;
                 background-image:url('src/images/portfolio/llanodesktop.png');
-                background-size: auto 500px;
-                background-position: -10px -60px;
+                background-size: auto 400px;
+                background-position: 0px 0px;
                 text-align: center;
                 @include xs{
                     @include textposition(0px, 50px);
@@ -124,14 +135,14 @@
     
             .device2 {   
                
-                width: 400px;
+                width: 380px;
                 height: 270px;
                 
                 position: absolute;
                 z-index: 1;
                 background-image:url('src/images/portfolio/llanoipad.png');
-                background-size: auto 400px;
-                background-position: -30px -70px;
+                background-size: auto 270px;
+                background-position: 0px 0px;
 
                  @include xs{
                      @include textposition(150px, 0px);
@@ -147,24 +158,24 @@
           
         .farmingdiv{
             .device1{
-               width: 245px;
+               width: 250px;
                height: 450px;
                position: absolute;
                z-index: 1;
                background-image:url('src/images/portfolio/map.png');
-               background-size: auto 520px;
-               background-position: -145px -35px;
+               background-size: auto 450px;
+               background-position: 0px 0px;
                text-align: center;
            }
    
            .device2 {   
-               width: 210px;
+               width: 220px;
                height: 410px;
                position: absolute;
                z-index: 1;
                background-image:url('src/images/portfolio/farms.png');
-               background-size: auto 450px;
-               background-position: -130px -30px;
+               background-size: auto 410px;
+               background-position: 0px 0px;
 
                 @include xs{
                     @include textposition(60px, 145px);
@@ -190,13 +201,16 @@
                width: 100vw;
                background-color:  rgb(255, 128, 0);
                color: white;
-               font-size: 14px;
+               font-size: 11px;
                margin-left: 0;
-               margin-top: -136%;
+               margin-top: 0;
                border-radius: 0px;
-               height: 450px;
+               height: 140px;
+               overflow-y: scroll;
                border: none;
-                padding: 10%;
+                padding-left: 10%;
+                padding-right: 10%;
+                
                
 
                
@@ -204,7 +218,7 @@
             }
             
             @include xl{  
-              
+              display: grid;
                position: relative;
                background-color: white;
                color: black;
@@ -221,7 +235,7 @@
         }
     }
 
-    .options{
+    .optionsxl{
         text-align: center;
         
         @include xs{
@@ -324,7 +338,7 @@
         }
 
         h2{
-
+            
             text-align: center;
             
             @include xs{
