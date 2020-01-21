@@ -1,4 +1,4 @@
-<div class="section">
+<!-- <div class="section">
 
     <div class="card-deck">
         <div class="card  text-center" style="width: 20rem;">
@@ -45,135 +45,129 @@
           
             <div class="card-body">
               <h5 class="card-title">Ultimate Package</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="cost">$5799.99</div>
+              <div class="hours"><b>40 hours</b></div>
+              <p class="card-text">This package allows us to take a deep dive into your project. We will set up meetings to get an understanding of your application idea and collaboratively design the app page by page!</p>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">Cras justo odio</li>
-              <li class="list-group-item">Dapibus ac facilisis in</li>
-              <li class="list-group-item">Vestibulum at eros</li>
+              <li class="list-group-item"> Software Blueprints<br /> 
+                <small>Allow you to 'shop around' to different software companies.</small></li>
+              <li class="list-group-item">Increased Design Efforts</li>
+              <li class="list-group-item">Access to our network of software development teams</li>
             </ul>
             <div class="card-body">
               <div class="call"><button class="contactbutton"><a href="#contact">Contact Us</a></button></div>
             </div>
           </div>
-      </div>
-    <!-- <div class="container packagediv">
+    
+    
+    
+    
+    
+        </div>
+   
+
+          -->
+
+          <div class="section">
+
+          
+            <ngb-carousel *ngIf="packages" data-interval="false" class="carousel">
+               
+                <ng-template ngbSlide>
+                  <div class="picsum-img-wrapper">
+                    
+                    <div class="card  text-center" style="width: 100%;">
+           
+                      <div class="card-body">
+                        <h5 class="card-title">Basic Package</h5>
+                        <div class="cost">$1499.99</div>
+                        <p class="card-text">This package is for the clients who may need help with a current software project or for the client who wants to see how we can get started on your software idea! </p>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"> Feasability Research<br />
+                          <small>Is your project possible?</small></li>
+                        <li class="list-group-item">Software Consulting<br />-</li>
+                        <li class="list-group-item">-</li>
+                      </ul>
+                      <div class="card-body">
+                          <div class="call"><button class="contactbutton"><a href="#contact">Contact Us</a></button></div>
+                      </div>
+                    </div>
+          
+                      
+                     
+                      
+                     
+                  </div>
+                  <div class="carousel-caption">
+                   
+                   
+                   
         
-       <div class="row">
-         
-            
-            <div class="col-sm">
-             
-                <div class="package1">
-
-                    <div class="title">Feasibility Package</div>
-                       
-                    
-                       <div class="description">This package is for the clients who may need help with a current software project or for the client who wants to see how we can get started on your software idea! </div>
-                    <div class="cost">$1499.99</div>
-                    <div class="hours"><b>10 hours</b></div>
-                    
-                    <div class="details">
-                        <div class="one">
-                           Feasability Research<br />
-                           <small>Is your project possible?</small>
+                  </div>
+                </ng-template>
+                
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                      <div class="card  text-center" style="width: 100%;">
+           
+                        <div class="card-body">
+                          <h5 class="card-title">Premium Package</h5>
+                          <div class="cost">$2999.99</div>
+                          <p class="card-text">This package allows us to take a deep dive into your project. We will set up meetings to get an understanding of your application idea and collaboratively design the app page by page! </p>
                         </div>
-                    
-                        <div class="two">
-                            Software Consulting
-                        </div>
-                    
-                        <div class="three">
-                            -
-                        </div>
-                    
-                        <div class="four">
-                            -
-                        </div>
-                    </div>
-                    
-                    <div class="call"><button class="contactbutton"><a href="#contact">Contact Us</a></button></div>
-                        
-                    </div>
-                    
-
-
-              
-            </div>
-
-            <div class="col-sm">
-                <div class="package2">
-            
-                    <div class="title">Untitled Package</div>
-                       
-                    
-                       <div class="description">This package allows us to take a deep dive into your project. We will set up meetings to get an understanding of your application idea and collaboratively design the app page by page! </div>
-                    <div class="cost">$2999.99</div>
-                    <div class="hours"><b>20 hours</b></div>
-                    
-                    <div class="details">
-                        <div class="one">
-                            Software Blueprints<br /> 
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item"> Software Blueprints<br /> 
                             <small>Allow you to 'shop around' to different software companies.</small>
-    
-                        </div>
-                    
-                        <div class="two">
-                            Design of the Application<br />
-                            <small>5 screens</small>
-    
-                        </div>
-                    
-                        <div class="three">
-                            Software Documentation<br />
+            </li>
+                          <li class="list-group-item"> Design of the Application<br />
+                            <small>5 screens</small></li>
+                          <li class="list-group-item">Software Documentation<br />
                             <small>Helps explain your idea from a software developer's point of view!</small>
+                        </li>
+                        </ul>
+                        <div class="card-body">
+                            <div class="call"><button class="contactbutton"><a href="#contact">Contact Us</a></button></div>
                         </div>
-                    
-                        <div class="four">
-                            -
-                        </div>
+                      </div>
                     </div>
-                    
-                    <div class="call"><button class="contactbutton"><a href="#contact">Contact Us</a></button></div>
-                        
+                    <div class="carousel-caption">
+                      
                     </div>
-            </div>
-
-            <div class="col-sm">
-                <div class="package3">
-            
-                    <div class="title">Untitled Package</div>
-                       
-                    
-                       <div class="description">This package allows us to take a deep dive into your project. We will set up meetings to get an understanding of your application idea and collaboratively design the app page by page! </div>
-                    <div class="cost">$5799.99</div>
-                    <div class="hours"><b>40 hours</b></div>
-                    
-                    <div class="details">
-                        <div class="one">
-                            Software Blueprints<br /> 
-                            <small>Allow you to 'shop around' to different software companies.</small>
+                  </ng-template> 
+               
+        
+                   <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                      <div class="card  text-center" style="width: 100%;">
+          
+                        <div class="card-body">
+                          <h5 class="card-title">Ultimate Package</h5>
+                          <div class="cost">$5799.99</div>
+                          <div class="hours"><b>40 hours</b></div>
+                          <p class="card-text">This package allows us to take a deep dive into your project. We will set up meetings to get an understanding of your application idea and collaboratively design the app page by page!</p>
                         </div>
-                    
-                        <div class="two">
-                           Increased Design Efforts
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item"> Software Blueprints<br /> 
+                            <small>Allow you to 'shop around' to different software companies.</small></li>
+                          <li class="list-group-item">Increased Design Efforts</li>
+                          <li class="list-group-item">Access to our network of software development teams</li>
+                        </ul>
+                        <div class="card-body">
+                          <div class="call"><button class="contactbutton"><a href="#contact">Contact Us</a></button></div>
                         </div>
-                    
-                        <div class="three">
-                            Access to our network of software development teams
-
-                        </div>
-                    
-                        <div class="four">
-                            Discounted price for bulk hour purchase
-                        </div>
+                      </div>
                     </div>
-                    
-                    <div class="call"><button class="contactbutton"><a href="#contact">Contact Us</a></button></div>
-                        
+                    <div class="carousel-caption">
+                      
                     </div>
-            </div>
-            
-       </div>
-    </div> -->
-</div>
+                  </ng-template>
+        
+                
+              </ngb-carousel>
+              
+        
+        
+        </div>
+        

@@ -1,10 +1,10 @@
-<div class="section" *ngIf="!details" wmAnimate="fadeInUp" speed="normal">
 
-    <div class="container">
+
+    <div class="container" *ngIf="!details" wmAnimate="fadeInUp" speed="normal">
         <div class="row">
-            <div class="col-sm-2">
+            <!-- <div class="col-sm-2">
                 <h2>meet the team</h2>
-            </div>
+            </div> -->
             
             <div class="col-sm-2 nat" (click) = "goDetails('nat')">
                 
@@ -24,11 +24,11 @@
                 <!-- <div class="persondiv" (click) = "goDetails('alex')"></div> -->
             </div>
            
+           
         </div>
     </div>
 
 
-</div>
 
 
 <div class="details" *ngIf="details" wmAnimate="fadeIn" speed="normal">

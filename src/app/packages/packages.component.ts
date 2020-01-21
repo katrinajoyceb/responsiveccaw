@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PackagesComponent implements OnInit {
 
+  packages: boolean = true;
+
   constructor() { }
 
   ngOnInit() {

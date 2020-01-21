@@ -107,7 +107,7 @@
 
 .alex{
 
-    background-color: green;
+    background-color: rgb(224, 224, 224);
    
     
     @include xs{
@@ -127,42 +127,31 @@
     }
 }
 
-.section{
-    width: auto;
-    border: 1px solid black;
-    background-color:rgb(255, 255, 255);
+// .section{
+//     width: 100%;
+//     border: 1px solid rgb(0, 89, 255);
+//     background-color:rgb(255, 255, 255);
     
 
-    @include xs{
+//     @include xs{
         
-        height: auto;
+//         height: auto;
         
-    }
+//     }
 
-    @include xl{
+//     @include xl{
         
-        height: 768px;   
-    }
+//         height: 768px;   
+//     }
 
 
 
-    .container{
-        @include xs{
-        
-            margin-top: 50%;
-        }
-    
-        @include xl{
-            
-            margin-top: 0px; 
-        }
-    }
+
 
     
 
     
 
-}
 
 .details{
 

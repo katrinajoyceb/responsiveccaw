@@ -24,11 +24,31 @@ import {
     trigger('lastClicked', [
       state('clicked', style({
        
-        border:  'none',
+      
         color: ' #FFFFFF',
         background: '#FF8000',
       })),
       state('notClicked', style({
+     
+        color: ' #000000',
+        background: '#FFFFFF',
+        
+        
+      })),
+      transition('clicked => notClicked', [
+        animate('0.2s')
+      ]),
+      transition('notClicked => clicked', [
+        animate('0.2s')
+      ]),
+    ]),
+    trigger('lastText', [
+      state('clicked', style({
+       
+        display: 'block'
+      })),
+      state('notClicked', style({
+        display: 'none'
         
         
       })),
@@ -58,6 +78,9 @@ export class TestComponent implements OnInit {
   about: boolean = true;
   solution: boolean = false;
   problem: boolean = false;
+  aboutmobile: boolean = false;
+
+  mobile: boolean = false;
 
 
 
@@ -123,8 +146,29 @@ export class TestComponent implements OnInit {
 
   }
 
-  nfsbdetails(choice: string){
+  
+  detailsxl(choice: string){
+
+
+    if(choice === 'about'){
+      this.aboutmobile = !this.aboutmobile;
+      this.solution = false;
+      this.problem = false;
+     
+    }
+    else if(choice === 'solution'){
+      this.aboutmobile = false;
+      this.solution = !this.solution;
+      this.problem = false;
+    }
+    else if(choice === 'problem'){
+      this.aboutmobile = false;
+      this.solution = false;
+      this.problem = !this.problem;
+    }
 
 
   }
+
+ 
 }
