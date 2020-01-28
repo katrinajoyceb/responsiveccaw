@@ -1,10 +1,9 @@
 
-
     <div class="container" *ngIf="!details" wmAnimate="fadeInUp" speed="normal">
         <div class="row">
-            <!-- <div class="col-sm-2">
+            <div class="col-sm-2">
                 <h2>meet the team</h2>
-            </div> -->
+            </div>
             
             <div class="col-sm-2 nat" (click) = "goDetails('nat')">
                 
@@ -36,23 +35,28 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-1"> <div class="teambutton"><button (click) = "goTeam()">TEAM</button></div></div> 
+            <div class="col-sm-1"><div class="teambutton"><button (click) = "goTeam()">GO BACK</button></div></div> 
             <div class="col-sm">
                 <div [ngClass]="myClass" ></div>
             </div>
             <div class="col-sm">
                 <div class="row">
                     <div class="col-sm">
-                        {{name}}
+                       <h2> {{abouttext.first}} 
+                        {{abouttext.last}}
+                        </h2>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-sm">
-                        Information
+                        {{abouttext.about}} <p>
+                        {{abouttext.school}}<p>
+                        {{abouttext.hobbies}}
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+

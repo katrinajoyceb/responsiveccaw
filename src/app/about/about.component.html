@@ -63,11 +63,11 @@
       <!-- <div class="aboutbutton"><button (click) = "goAbout()">ABOUT</button></div> -->
       <!-- <h2>meet the team</h2>
     </div> -->
-    <div class="col-sm-2"></div>
-    <div class="col-sm-1 box">
+    <div class="col-sm-2"><div class="aboutbutton" *ngIf="team"><button (click) = "goAbout()">ABOUT</button></div>
+    <div class="col-sm-1 box"></div>
         
-      <h2>meet the team</h2>
-      <div class="aboutbutton"><button (click) = "goAbout()">ABOUT</button></div>
+      
+      
     
     </div>
     <div class="col-sm-8 box">
@@ -86,3 +86,4 @@
 
   
 </div>
+
